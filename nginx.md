@@ -23,3 +23,12 @@ make install
 
 
 ```
+# Nginx commned
+```
+/usr/local/nginx/sbin/nginx           啟動nginx
+/usr/local/nginx/sbin/nginx -s stop   停止nginx
+/usr/local/nginx/sbin/nginx -s reload 重新整理nginx
+/usr/local/nginx/sbin/nginx -t        檢查nginx是否有文法錯誤
+/usr/local/nginx/sbin/nginx -v        觀看nginx版本
+
+```
