@@ -6,16 +6,17 @@ wget http://nginx.org/download/nginx-1.12.2.tar.gz
 wget https://github.com/arut/nginx-rtmp-module/archive/master.zip
 tar -zxvf nginx-1.12.2.tar.gz
 unzip master.zip
-yum install gcc-c
+yum install gcc-c++ 
 yum install pcre pcre-devel
 yum install zlib zlib-devel
-yum install openssl openssl--devel
+yum install openssl 
+yum install openssl-devel.x86_64
 cd nginx-1.12.2/
 yum search openssl*
 yum install xmlsec1-openssl-devel.x86_64
 ./configure --add-module=/usr/local/nginx/nginx-rtmp-module-master
 ll
-cd ..
+cd ..  no
 make
 make install
 
