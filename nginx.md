@@ -16,7 +16,6 @@ yum search openssl*
 yum install xmlsec1-openssl-devel.x86_64
 ./configure --add-module=/usr/local/nginx/nginx-rtmp-module-master
 ll
-cd ..  no
 make
 make install
 
